@@ -8,7 +8,32 @@
 
 ## Example
 
-Nothing to see. Move along!
+```php
+use TypedPHP\Functions\TypeFunctions;
+
+TypeFunctions\getType(1.5); // number
+
+TypeFunctions\isBoolean(false);   // true
+TypeFunctions\isBoolean("false"); // false
+```
+
+Functions:
+
+- `isNumber`
+- `isBoolean`
+- `isNull`
+- `isObject`
+- `isFunction`
+- `isExpression`
+- `isString`
+- `isResource`
+- `getType`
+
+Caveats:
+
+- `isExpression` will return false if `isString` returns true.
+- `isFunction` will return false if `isObject` returns true.
+- `getType` will return unknown if the argument is not matched by any of the `is*` functions.
 
 ## Installation
 
