@@ -82,7 +82,7 @@ function isString($variable)
  */
 function isResource($variable)
 {
-    return \getType($variable) === "resource";
+    return is_resource($variable);
 }
 
 /**
