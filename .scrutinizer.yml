@@ -6,4 +6,4 @@ checks:
         code_rating: true
         duplication: true
 filter:
-    paths: [source/*, tests/*]
+    paths: [src/*, tests/*]
