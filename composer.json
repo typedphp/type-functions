@@ -13,7 +13,7 @@
     },
     "autoload": {
         "files": [
-            "source/TypeFunctions.php"
+            "src/TypeFunctions.php"
         ]
     },
     "require-dev": {
@@ -22,10 +22,10 @@
     },
     "autoload-dev": {
         "files": [
-            "tests/TestCase.php"
+            "tests/Test.php"
         ],
         "psr-4": {
-            "TypedPHP\\Functions\\TypeFunctions\\Tests\\": "tests"
+            "TypedPHP\\Functions\\TypeFunctions\\Test\\": "tests"
         }
     }
 }

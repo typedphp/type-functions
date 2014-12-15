@@ -1,15 +1,13 @@
 <?php
 
-namespace TypedPHP\Functions\TypeFunctions\Tests;
+namespace TypedPHP\Functions\TypeFunctions\Test;
 
 use TypedPHP\Functions\TypeFunctions;
 
-class TypeFunctionTest extends TestCase
+class TypeFunctionTest extends Test
 {
     /**
      * @test
-     *
-     * @return void
      */
     public function testIsNumber()
     {
@@ -24,8 +22,6 @@ class TypeFunctionTest extends TestCase
 
     /**
      * @test
-     *
-     * @return void
      */
     public function testIsBoolean()
     {
@@ -40,8 +36,6 @@ class TypeFunctionTest extends TestCase
 
     /**
      * @test
-     *
-     * @return void
      */
     public function testIsNull()
     {
@@ -54,8 +48,6 @@ class TypeFunctionTest extends TestCase
 
     /**
      * @test
-     *
-     * @return void
      */
     public function testIsObject()
     {
@@ -70,8 +62,6 @@ class TypeFunctionTest extends TestCase
 
     /**
      * @test
-     *
-     * @return void
      */
     public function testIsFunction()
     {
@@ -87,8 +77,6 @@ class TypeFunctionTest extends TestCase
 
     /**
      * @test
-     *
-     * @return void
      */
     public function testIsExpression()
     {
@@ -99,8 +87,6 @@ class TypeFunctionTest extends TestCase
 
     /**
      * @test
-     *
-     * @return void
      */
     public function testIsString()
     {
@@ -111,8 +97,6 @@ class TypeFunctionTest extends TestCase
 
     /**
      * @test
-     *
-     * @return void
      */
     public function testIsResource()
     {
@@ -127,8 +111,6 @@ class TypeFunctionTest extends TestCase
 
     /**
      * @test
-     *
-     * @return void
      */
     public function testGetType()
     {
