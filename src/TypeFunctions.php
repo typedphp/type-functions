@@ -88,19 +88,30 @@ function isResource($variable)
 /**
  * @param mixed $variable
  *
+ * @return bool
+ */
+function isArray($variable)
+{
+    return is_array($variable);
+}
+
+/**
+ * @param mixed $variable
+ *
  * @return string
  */
 function getType($variable)
 {
     $functions = [
-        "isNumber"     => "number",
-        "isBoolean"    => "boolean",
-        "isNull"       => "null",
-        "isObject"     => "object",
-        "isFunction"   => "function",
+        "isNumber" => "number",
+        "isBoolean" => "boolean",
+        "isNull" => "null",
+        "isObject" => "object",
+        "isFunction" => "function",
         "isExpression" => "expression",
-        "isString"     => "string",
-        "isResource"   => "resource"
+        "isString" => "string",
+        "isResource" => "resource",
+        "isArray" => "array"
     ];
 
     $result = "unknown";
