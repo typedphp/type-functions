@@ -6,10 +6,7 @@ use TypedPHP\Functions\TypeFunctions;
 
 class TypeFunctionTest extends Test
 {
-    /**
-     * @test
-     */
-    public function itIdentifiesNumbers()
+    public function testIsNumber()
     {
         $this->assertTrue(TypeFunctions\isNumber(0));
         $this->assertTrue(TypeFunctions\isNumber(0.5));
@@ -20,10 +17,7 @@ class TypeFunctionTest extends Test
         $this->assertFalse(TypeFunctions\isNumber(false));
     }
 
-    /**
-     * @test
-     */
-    public function itIdentifiesBooleans()
+    public function testIsBoolean()
     {
         $this->assertTrue(TypeFunctions\isBoolean(true));
         $this->assertTrue(TypeFunctions\isBoolean(false));
@@ -34,10 +28,7 @@ class TypeFunctionTest extends Test
         $this->assertFalse(TypeFunctions\isBoolean(0));
     }
 
-    /**
-     * @test
-     */
-    public function itIdentifiesNulls()
+    public function testIsNull()
     {
         $this->assertTrue(TypeFunctions\isNull(null));
 
@@ -46,10 +37,7 @@ class TypeFunctionTest extends Test
         $this->assertFalse(TypeFunctions\isNull(0));
     }
 
-    /**
-     * @test
-     */
-    public function itIdentifiesObjects()
+    public function testIsObject()
     {
         $this->assertTrue(TypeFunctions\isObject($this));
 
@@ -60,10 +48,7 @@ class TypeFunctionTest extends Test
         $this->assertFalse(TypeFunctions\isObject($function));
     }
 
-    /**
-     * @test
-     */
-    public function itIdentifiesFunctions()
+    public function testIsFunction()
     {
         $function = function () {
             echo "hello";
@@ -75,30 +60,21 @@ class TypeFunctionTest extends Test
         $this->assertFalse(TypeFunctions\isFunction("is_callable"));
     }
 
-    /**
-     * @test
-     */
-    public function itIdentifiesExpressions()
+    public function testIsExpression()
     {
         $this->assertTrue(TypeFunctions\isExpression("[a-z]"));
 
         $this->assertFalse(TypeFunctions\isExpression("hello"));
     }
 
-    /**
-     * @test
-     */
-    public function itIdentifiesStrings()
+    public function testIsString()
     {
         $this->assertTrue(TypeFunctions\isString("hello"));
 
         $this->assertFalse(TypeFunctions\isString("[a-z]"));
     }
 
-    /**
-     * @test
-     */
-    public function itIdentifiesResources()
+    public function testIsResource()
     {
         $file = fopen(__FILE__, "r");
 
@@ -109,20 +85,14 @@ class TypeFunctionTest extends Test
         fclose($file);
     }
 
-    /**
-     * @test
-     */
-    public function itIdentifiesArrays()
+    public function testIsArray()
     {
         $this->assertTrue(TypeFunctions\isArray(["foo", "bar"]));
 
         $this->assertFalse(TypeFunctions\isArray("foo"));
     }
 
-    /**
-     * @test
-     */
-    public function itIdentifiesTypes()
+    public function testGetType()
     {
         $file = fopen(__FILE__, "r");
 
