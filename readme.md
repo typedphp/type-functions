@@ -1,10 +1,10 @@
 # Type Functions
 
-![Build Status](http://img.shields.io/travis/typedphp/type-functions.svg?style=flat-square)
-![Code Quality](http://img.shields.io/scrutinizer/g/typedphp/type-functions.svg?style=flat-square)
-![Code Coverage](http://img.shields.io/scrutinizer/coverage/g/typedphp/type-functions.svg?style=flat-square)
-![Version](http://img.shields.io/packagist/v/typedphp/type-functions.svg?style=flat-square)
-![License](http://img.shields.io/packagist/l/typedphp/type-functions.svg?style=flat-square)
+[![Build Status](http://img.shields.io/travis/typedphp/type-functions.svg?style=flat-square)](https://travis-ci.org/typedphp/type-functions)
+[![Code Quality](http://img.shields.io/scrutinizer/g/typedphp/type-functions.svg?style=flat-square)](https://scrutinizer-ci.com/g/typedphp/type-functions)
+[![Code Coverage](http://img.shields.io/scrutinizer/coverage/g/typedphp/type-functions.svg?style=flat-square)](http://typedphp.github.io/type-functions/master)
+[![Version](http://img.shields.io/packagist/v/typedphp/type-functions.svg?style=flat-square)](https://packagist.org/packages/typedphp/type-functions)
+[![License](http://img.shields.io/packagist/l/typedphp/type-functions.svg?style=flat-square)](licence.md)
 
 ## Example
 
