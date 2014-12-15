@@ -19,15 +19,15 @@ TypeFunctions\isBoolean("false"); // false
 
 Functions:
 
-- `isNumber(mixed $variable)`
-- `isBoolean(mixed $variable)`
-- `isNull(mixed $variable)`
-- `isObject(mixed $variable)`
-- `isFunction(mixed $variable)`
-- `isExpression(mixed $variable)`
-- `isString(mixed $variable)`
-- `isResource(mixed $variable)`
-- `getType(mixed $variable)`
+- `isNumber(mixed $variable) → bool`
+- `isBoolean(mixed $variable) → bool`
+- `isNull(mixed $variable) → bool`
+- `isObject(mixed $variable) → bool`
+- `isFunction(mixed $variable) → bool`
+- `isExpression(mixed $variable) → bool`
+- `isString(mixed $variable) → bool`
+- `isResource(mixed $variable) → bool`
+- `getType(mixed $variable) → string`
 
 Caveats:
 
