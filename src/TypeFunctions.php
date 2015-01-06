@@ -117,9 +117,10 @@ function getType($variable)
     $result = "unknown";
 
     foreach ($functions as $function => $type) {
-        $qualified = "TypedPHP\\Functions\\TypeFunctions\\{$function}";
+        $namespace = "TypedPHP\\Functions\\TypeFunctions\\";
+        $function = $namespace . $function;
 
-        if ($qualified($variable)) {
+        if ($function($variable)) {
             $result = $type;
             break;
         }
